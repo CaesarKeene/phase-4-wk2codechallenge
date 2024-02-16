@@ -1,7 +1,7 @@
 # Phase-4-week2-codechallenge
 ## Description 
 This is a pizza restaurant web application 
-## Technolgy used 
+## Technology used 
 1. Flask 
 2. Python
 3. Javascript 
@@ -12,4 +12,4 @@ This is a pizza restaurant web application
 4. Cd into the backend folder and run python seed.py then python app.py. 
 
 # Author and license 
-'caesarkeene'
+'Caesarkeene'
