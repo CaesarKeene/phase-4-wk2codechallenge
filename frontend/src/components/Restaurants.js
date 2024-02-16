@@ -24,7 +24,7 @@ const Restaurants = () => {
       });
 
       if (response.status === 204) {
-        // Update the state after successful deletion
+        
         setRestaurants((prevRestaurants) =>
           prevRestaurants.filter((restaurant) => restaurant.id !== restaurantId)
         );

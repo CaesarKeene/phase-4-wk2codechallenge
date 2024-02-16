@@ -1,0 +1,32 @@
+/* header.css */
+
+header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 15px 0; /* Adjust padding as needed */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #e44d26; /* Orange-red on hover */
+  }
+  

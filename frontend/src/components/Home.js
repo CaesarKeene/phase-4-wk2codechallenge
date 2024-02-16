@@ -29,7 +29,7 @@ const Home = () => {
 
       <section>
         <h2>Connect With Us</h2>
-        <p>For inquiries, reservations, or to place an order, don't hesitate to reach out at 0712093847. We eagerly anticipate the opportunity to serve you the finest pizza in the city!</p>
+        <p>For inquiries, reservations, or to place an order, don't hesitate to reach out at +1 692093847. We eagerly anticipate the opportunity to serve you the finest pizza in the city!</p>
       </section>
     </div>
   );

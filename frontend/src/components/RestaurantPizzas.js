@@ -16,7 +16,7 @@ const RestaurantPizzas = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    // Clear previous error message when the user changes input
+    
     setError(null);
   };
 
@@ -47,7 +47,7 @@ const RestaurantPizzas = () => {
         const data = await response.json();
         console.log('Restaurant Pizza created:', data);
 
-        // Redirect to the corresponding restaurant page after successful creation
+        
         navigate(`/restaurants/${formData.restaurant_id}`);
       } else {
         console.error('Error creating Restaurant Pizza:', response.statusText);
@@ -59,7 +59,7 @@ const RestaurantPizzas = () => {
 
   return (
     <div>
-      <h2>Create Restaurant Pizza</h2>
+      <h2>Add your Restaurant Pizza</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit}>
         <label>
@@ -74,7 +74,7 @@ const RestaurantPizzas = () => {
           Price:
           <input type="text" name="price" value={formData.price} onChange={handleChange} />
         </label>
-        <button type="submit">Create Restaurant Pizza</button>
+        <button type="submit">Add Restaurant Pizza</button>
       </form>
       <Link to="/">Back to Home</Link>
     </div>

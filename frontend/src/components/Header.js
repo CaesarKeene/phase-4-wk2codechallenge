@@ -2,21 +2,46 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const navStyle = {
+    backgroundColor: '#f2f2f2',
+    padding: '10px',
+    borderBottom: '1px solid #ccc',
+  };
+
+  const ulStyle = {
+    listStyleType: 'none',
+    margin: 0,
+    padding: 0,
+    display: 'flex',
+    justifyContent: 'space-around',
+  };
+
+  const liStyle = {
+    margin: 0,
+    padding: 0,
+  };
+
+  const linkStyle = {
+    textDecoration: 'none',
+    color: '#333',
+    fontWeight: 'bold',
+  };
+
   return (
     <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+      <nav style={navStyle}>
+        <ul style={ulStyle}>
+          <li style={liStyle}>
+            <Link to="/" style={linkStyle}>Home</Link>
           </li>
-          <li>
-            <Link to="/pizzas">Pizzas</Link>
+          <li style={liStyle}>
+            <Link to="/pizzas" style={linkStyle}>Pizzas</Link>
           </li>
-          <li>
-            <Link to="/restaurants">Restaurants</Link>
+          <li style={liStyle}>
+            <Link to="/restaurants" style={linkStyle}>Restaurants</Link>
           </li>
-          <li>
-            <Link to="/restaurant_pizzas">Restaurant Pizzas</Link>
+          <li style={liStyle}>
+            <Link to="/restaurant_pizzas" style={linkStyle}>Restaurant Pizzas</Link>
           </li>
         </ul>
       </nav>
